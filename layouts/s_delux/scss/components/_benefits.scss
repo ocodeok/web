@@ -1,0 +1,287 @@
+.benefits-list {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+
+	&__content-img {
+		position: relative;
+		max-height: 670px;
+		margin-left: 15px;
+		margin-top: -5px;
+		flex-shrink: 0;
+	}
+
+	&__big-img {
+		height: 100%;
+		width: auto;
+		object-fit: cover;
+
+		max-width: 470px;
+		max-height: 670px;
+
+		overflow: hidden;
+		border-radius: 5px;
+	}
+
+	&__small-img {
+		height: 100%;
+		width: auto;
+		object-fit: cover;
+
+		max-width: 248px;
+		max-height: 355px;
+
+		overflow: hidden;
+		border-radius: 5px;
+		box-shadow: 2px 2px 15px var(--clr-cod-gray);
+
+		position: absolute;
+		bottom: 65px;
+		right: -111px;
+	}
+
+	&__item {
+		display: flex;
+
+		&:nth-child(even) {
+			.benefits-list__description-block {
+				margin-left: 0;
+				order: -1;
+			}
+
+			.benefits-list__small-img {
+				left: -111px;
+			}
+
+			.benefits-list__img-block {
+				margin-left: 125px;
+				margin-top: 17px;
+			}
+		}
+
+		&:not(:first-child) {
+			margin-top: 220px;
+		}
+	}
+
+	&__description-block {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		margin-left: 213px;
+	}
+
+	&__title {
+		color: var(--clr-satin-linen);
+		font-weight: 700;
+		font-size: 40px;
+		line-height: 46px;
+		margin-bottom: 9px;
+	}
+
+	&__subtitle {
+		color: var(--clr-dove-gray);
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 26px;
+	}
+
+	&__text {
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 26px;
+		color: var(--clr-silver);
+		max-width: 416px;
+	}
+
+	&__header {
+		margin-top: -50px;
+	}
+
+	@media (max-width: 1280px) {
+		&__description-block {
+			margin-left: 160px;
+			max-width: 500px;
+		}
+
+		&__item {
+			&:nth-child(even) {
+				.benefits-list__description-block {
+					margin-left: 0;
+					order: -1;
+				}
+
+				.benefits-list__small-img {
+					left: -111px;
+				}
+
+				.benefits-list__img-block {
+					margin-left: 82px;
+				}
+			}
+
+			&:not(:first-child) {
+				margin-top: 220px;
+			}
+		}
+	}
+
+	@media (max-width: 1185px) {
+		&__description-block {
+			margin-left: auto;
+			max-width: 400px;
+		}
+
+		&__text {
+			max-width: auto;
+			max-width: max-content;
+		}
+
+		&__img-block,
+		&__big-img {
+			max-width: 300px;
+		}
+
+		&__small-img {
+			bottom: 0;
+		}
+
+		&__content-img {
+			margin-left: 0;
+		}
+
+		&__item {
+			&:nth-child(even) {
+				.benefits-list__description-block {
+					margin-left: 0;
+					order: -1;
+				}
+
+				.benefits-list__small-img {
+					left: -111px;
+				}
+
+				.benefits-list__img-block {
+					margin-left: auto;
+				}
+			}
+
+			&:not(:first-child) {
+				margin-top: 220px;
+			}
+		}
+	}
+
+	@media (max-width: 900px) {
+		&__description-block {
+			margin-left: auto;
+			max-width: 300px;
+		}
+	}
+
+	@media (max-width: 800px) {
+		&__description-block {
+			order: -1;
+			margin-left: 0;
+			max-width: max-content;
+			margin-bottom: 15px;
+		}
+
+		&__text {
+			max-width: auto;
+			max-width: max-content;
+		}
+
+		&__img-block {
+			align-self: center;
+		}
+
+		&__small-img {
+			bottom: 0;
+		}
+
+		&__content-img {
+			margin-left: 0;
+		}
+
+		&__item {
+			flex-direction: column;
+			&:nth-child(even) {
+				.benefits-list__img-block {
+					margin-left: 0;
+				}
+			}
+
+			&:not(:first-child) {
+				margin-top: 75px;
+			}
+		}
+	}
+
+	@media (max-width: 550px) {
+		&__title {
+			font-size: 24px;
+		}
+		&__description-block {
+			margin-left: 0;
+			max-width: max-content;
+			margin-bottom: 15px;
+		}
+
+		&__text {
+			max-width: auto;
+			max-width: max-content;
+		}
+
+		&__img-block {
+			align-self: center;
+		}
+
+		&__small-img {
+			bottom: 0;
+			display: none;
+		}
+
+		&__big-img {
+			margin-bottom: 15px;
+			display: block;
+		}
+		&__content-img {
+			margin-left: 0;
+		}
+
+		&__header {
+			margin-top: 0;
+		}
+
+		&__item {
+			padding: 15px;
+			border-radius: 15px;
+			margin-top: 0;
+			flex-direction: column;
+			box-shadow: 2px 2px 15px var(--clr-satin-linen);
+			&:not(:first-child) {
+				margin-top: 25px;
+			}
+		}
+	}
+
+	@media (max-width: 400px) {
+		&__big-img {
+			max-width: 250px;
+		}
+	}
+}
+
+.benefits {
+	&__list {
+		margin-top: -280px;
+	}
+
+	@media (max-width: 800px) {
+		padding: 75px 0;
+		&__list {
+			margin-top: 0;
+		}
+	}
+}

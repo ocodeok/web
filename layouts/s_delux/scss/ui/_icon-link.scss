@@ -1,0 +1,10 @@
+.icon-link {
+	color: var(--clr-satin-linen);
+	text-decoration: none;
+	transition: color 0.3s ease;
+	font-size: 30px;
+
+	&:hover {
+		color: var(--clr-white);
+	}
+}

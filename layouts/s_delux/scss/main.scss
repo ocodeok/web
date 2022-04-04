@@ -1,0 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:wght@700&family=Roboto:wght@400;500;700;900&display=swap");
+
+// Base
+@import "./base/normolize";
+@import "./base/var";
+@import "./base/reset";
+@import "./base/simple";
+@import "./base/iconsfont";
+
+// UI
+@import "./ui/logo";
+@import "./ui/btn";
+@import "./ui/btn-toggle";
+@import "./ui/icon-link";
+
+// Components
+@import "./components/top-header";
+@import "./components/wide-screen";
+@import "./components/section";
+
+@import "./components/nav";
+@import "./components/offer";
+@import "./components/products";
+@import "./components/goals";
+@import "./components/benefits";
+@import "./components/footer";

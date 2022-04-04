@@ -1,0 +1,87 @@
+.btn {
+	padding: 0;
+	margin: 0;
+
+	cursor: pointer;
+	text-decoration: none;
+
+	display: inline-block;
+
+	color: var(--clr-cod-gray);
+
+	transition: background-color 0.3s ease, color 0.3s ease;
+
+	&--white {
+		background-color: var(--clr-white);
+		&:hover {
+			background-color: var(--clr-satin-linen);
+		}
+
+		&:active {
+			box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+			background-color: var(--clr-white);
+		}
+	}
+
+	// --clr-satin-linen
+
+	&--satin-linen {
+		background-color: var(--clr-satin-linen);
+		&:hover {
+			background-color: var(--clr-white);
+		}
+
+		&:active {
+			box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+			background-color: var(--clr-satin-linen);
+		}
+	}
+
+	&--cylinder {
+		width: 220px;
+		height: 62px;
+
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		border-radius: 50px;
+
+		font-size: 14px;
+		line-height: 16px;
+	}
+
+	&--rectangle {
+		width: 218px;
+		height: 62px;
+
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 16px;
+		color: var(--clr-satin-linen);
+
+		border-radius: 5px;
+		border: 1px solid var(--clr-satin-linen);
+		background-color: var(--clr-cod-gray);
+
+		transition: background-color 0.3s ease, color 0.3s ease,
+			border-color 0.3s ease;
+		&:hover {
+			background-color: var(--clr-satin-linen);
+			color: var(--clr-cod-gray);
+			border-color: var(--clr-cod-gray);
+		}
+	}
+
+	@media (max-width: 940px) {
+		&--cylinder,
+		&--rectangle {
+			width: 184px;
+			height: 44px;
+		}
+	}
+}

@@ -1,0 +1,31 @@
+.wide-screen {
+	padding: 0;
+	margin: 0;
+	color: #fff;
+
+	font-weight: 600;
+
+	--content-width: 1440px;
+	--content-narrow-mr: 0px;
+	--content-narrow-w: 96px;
+	--content-pl: calc((100% - var(--content-width)) / 2);
+	margin-right: var(--content-narrow-mr);
+	--content-wide-w: calc(
+		100% - var(--content-narrow-w) - var(--content-narrow-mr)
+	);
+
+	&__content {
+		display: flex;
+		padding-left: var(--content-pl);
+		&--wide {
+			max-width: var(--content-wide-w);
+			width: 100%;
+		}
+
+		&--narrow {
+			max-width: var(--content-narrow-w);
+			width: 100%;
+			margin-right: var(--content-narrow-mr);
+		}
+	}
+}

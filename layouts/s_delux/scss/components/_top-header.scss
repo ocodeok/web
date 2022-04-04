@@ -1,0 +1,16 @@
+.top-header {
+	// border: 1px solid red;
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	z-index: var(--z-menu-control);
+	background-color: var(--clr-cod-gray);
+	&__container {
+		// border: 3px solid green;
+	}
+
+	&.fixed {
+		position: fixed;
+	}
+}
